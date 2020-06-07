@@ -97,21 +97,11 @@ def full?
 end
 
 def draw?
-  if full? == true && won? == false
-    return true
-  elsif won? == true
-    return false
-  else
-    return false
-  end
+  full? && !won?
 end
 
 def over?
-  if won? == true || draw? == true
-    return true
-  else
-    return false
-  end 
+  won? || draw?
 end
 
 def winner
