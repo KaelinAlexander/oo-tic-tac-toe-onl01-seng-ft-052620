@@ -37,17 +37,17 @@ def move(index, current_player)
 end
 
 def position_taken?(index)
-  if board[index] == nil
-    return false
-  elsif
-    board[index] == " "
-    return false
-  elsif
-    board[index] == ""
-    return false
-  else
-    return true
-  end
+  board[index] != nil
+  #   return false
+  # elsif
+  #   board[index] == " "
+  #   return false
+  # elsif
+  #   board[index] == ""
+  #   return false
+  # else
+  #   return true
+  # end
 end
 
 def valid_move?(index)
