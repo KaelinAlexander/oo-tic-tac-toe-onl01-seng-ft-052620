@@ -127,7 +127,7 @@ def play
   end
   
   if winner
-  puts "Congratulations #{winner}!"
+  puts "Congratulations #{win}!"
   else
   puts "Cat's game!"
   end
